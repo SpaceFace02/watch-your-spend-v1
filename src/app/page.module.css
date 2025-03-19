@@ -1,0 +1,120 @@
+/* Page Layout */
+.pageContainer {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f9fafb;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Main Content Area */
+.mainContent {
+  flex-grow: 1;
+  padding: 40px;
+  background-color: #ffffff;
+  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Header Title */
+.mainContent h1 {
+  font-size: 32px;
+  color: #111827;
+  margin-bottom: 24px;
+}
+
+/* Welcome Message */
+.welcomeMessage {
+  font-size: 20px;
+  color: #1f2937;
+  margin-bottom: 16px;
+}
+
+/* Success Message */
+.successText {
+  color: #10b981;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+/* Button Styling */
+.actionButton {
+  margin-top: 16px;
+}
+
+.actionButton .ant-btn {
+  background-color: #2563eb;
+  color: #ffffff;
+  border: none;
+}
+
+.actionButton .ant-btn:hover {
+  background-color: #1d4ed8;
+}
+
+/* Error Section */
+.errorSection {
+  background-color: #fee2e2;
+  color: #b91c1c;
+  padding: 16px;
+  border-radius: 8px;
+  margin-top: 20px;
+  border: 1px solid #fca5a5;
+}
+
+/* Back Button */
+.backButton {
+  margin-top: 10px;
+}
+
+.backButton .ant-btn {
+  background-color: #ef4444;
+  color: #ffffff;
+  border: none;
+}
+
+.backButton .ant-btn:hover {
+  background-color: #dc2626;
+}
+
+/* File Upload Section */
+.uploadSection {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f3f4f6;
+  border-radius: 8px;
+  border: 1px dashed #d1d5db;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .pageContainer {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+  }
+
+  .mainContent {
+    padding: 20px;
+  }
+}
+
+.loaderContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #f9f9f9; /* Optional: Background color */
+  z-index: 9999;
+}
+
+.sideNote {
+  color: #858585;
+  font-style: italic;
+  margin-top: 10px;
+}
